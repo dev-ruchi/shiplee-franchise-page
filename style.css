@@ -1,0 +1,219 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* Scroll-to-Top Button */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    padding: 12px 16px;
+    border: none;
+    background: linear-gradient(135deg, #5a2dde, #7f54df);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  #scrollToTopBtn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #5a2dde, #7f54df);
+    color: #fff;
+  }
+  
+  #hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+  }
+  
+  #hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .cta-button {
+    background-color: #ff7a59;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e86947;
+  }
+  
+  /* Why Choose Shiplee Section */
+  #why-choose {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  #why-choose h2 {
+    font-size: 2.4em;
+    text-align: center;
+    color: #5a2dde;
+    margin-bottom: 1.5em;
+  }
+  
+  .accordion-item {
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-item h3 {
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: #f3f3f3;
+    transition: background-color 0.3s;
+  }
+  
+  .accordion-item h3:hover {
+    background-color: #ececec;
+  }
+  
+  .accordion-item p {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  /* Benefits Table Section */
+  #benefits-table {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  #benefits-table h2 {
+    font-size: 2.4em;
+    text-align: center;
+    color: #5a2dde;
+    margin-bottom: 1.5em;
+  }
+  
+  #benefits-table table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  #benefits-table th, #benefits-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  #benefits-table th {
+    background-color: #5a2dde;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #benefits-table td {
+    background-color: #fff;
+  }
+  
+  /* Network Reach Section */
+  #network-reach {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  #network-reach h2 {
+    font-size: 2.4em;
+    color: #5a2dde;
+    margin-bottom: 1em;
+  }
+  
+  #network-reach p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  /* Partner Logos Section */
+  #partners {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  #partners h2 {
+    font-size: 2.4em;
+    color: #5a2dde;
+    margin-bottom: 1.5em;
+  }
+  
+  .courier-logo {
+    width: 100px;               
+    height: auto;               
+    margin: 20px;              
+    border-radius: 8px;        
+    transition: transform 0.3s, box-shadow 0.3s ease;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  
+  }
+  
+  .courier-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.2em;
+    }
+  
+    #hero p {
+        font-size: 1em;
+    }
+  
+    #why-choose h2, #benefits-table h2, #network-reach h2, #partners h2 {
+        font-size: 2em;
+    }
+  
+    .accordion-item h3 {
+        font-size: 1em;
+    }
+  }
+  
